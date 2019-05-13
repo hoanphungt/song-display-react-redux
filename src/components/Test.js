@@ -6,7 +6,6 @@ const decrement = () => ({ type: 'decrement' });
 
 class Test extends React.Component {
     render() {
-        console.log(this.props)
         return (
             <div>
                 <button className='increment' onClick={this.props.increment}>Increment</button>
@@ -18,7 +17,6 @@ class Test extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state)
     return {
         count: state.count
     }
